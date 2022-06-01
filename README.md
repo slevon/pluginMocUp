@@ -19,7 +19,7 @@ graph TD;
  
 ```
 
-##Running
+## Running
 ````
 > python3 main.py
 ````
