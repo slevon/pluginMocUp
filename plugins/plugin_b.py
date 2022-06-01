@@ -8,7 +8,5 @@ class PluginB(plugins.Base):
     def start(self):
         print("Plugin B started")
 
-
-    def update_main_cunter(self):
-        self.main_cls.main_counter = 10
-        print("Plugin B updates Main Counter to 10")
+    def plugin_b_function(self):
+        print("Hello from B")

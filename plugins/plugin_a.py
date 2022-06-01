@@ -8,6 +8,6 @@ class PluginA(plugins.Base):
     def start(self):
         print("Plugin A started")
 
-    def update_main_cunter(self):
-        self.main_cls.main_counter = 5
+    def set_main_value(self):
+        self.main_cls.main_value = 5
         print("Plugin A updates Main Counter to 5")
