@@ -14,7 +14,7 @@ class App(tk.Tk):
         self.geometry('300x150')
 
         # label
-        self.label = ttk.Label(self, text='Hello, Tkinter!')
+        self.label = ttk.Label(self, text='Hello, h_da!')
         self.label.pack()
 
         # button
