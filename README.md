@@ -19,6 +19,17 @@ graph TD;
  
 ```
 
+## File structue
+```
+├── main.py
+├── plugins
+│   ├── __init__.py
+│   ├── plugin_a.py
+│   └── plugin_b.py
+└── README.md
+
+```
+
 ## Running
 ````
 > python3 main.py
