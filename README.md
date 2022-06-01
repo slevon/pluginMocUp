@@ -15,6 +15,7 @@ graph TD;
     Base-->PluginX;
     PluginA-->main;
     PluginB-->main;
+    PluginX-->main; 
 ```
 
 ##Running
