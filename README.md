@@ -20,20 +20,30 @@ graph TD;
 
 ## File structue
 ```
+├── gui.py
 ├── main.py
 ├── plugins
 │   ├── __init__.py
 │   ├── plugin_a.py
-│   └── plugin_b.py
+│   ├── plugin_b.py
+│   ├── plugin_gui.py
+└── README.md
+
+
 └── README.md
 
 ```
 
 ## Running
+Simple exmaple
 ````
 > python3 main.py
 ````
 
+GUI exmaple
+````
+> python3 gui.py
+````
 
 
 ## Credits

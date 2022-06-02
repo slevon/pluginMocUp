@@ -12,8 +12,9 @@ This file contains:
 class Base:
     """Basic resource class. Concrete resources will inherit from this one
     """
-    plugins = {}
-    main_cls=None
+    plugins  = {}
+    main_cls = None
+
     def __init__(self,main):
         self.main_cls=main
     # For every class that inherits from the current,
@@ -49,7 +50,7 @@ dirpath = os.path.dirname(path)
 for fname in os.listdir(dirpath):
     # Load only "real modules"
     if not fname.startswith('.') and \
-       not fname.startswith('__') and fname.endswith('.py'):
+       not fname.startswith('_') and fname.endswith('.py'):
         try:
             load_module(os.path.join(dirpath, fname))
         except Exception:

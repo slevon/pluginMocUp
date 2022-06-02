@@ -8,7 +8,6 @@ class App(tk.Tk):
     loaded_plugins={}
     def __init__(self):
         super().__init__()
-
         # configure the root window
         self.title('2022: Project')
         self.geometry('300x150')

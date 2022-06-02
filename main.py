@@ -1,4 +1,5 @@
 #Import Base-Plugin
+
 from plugins import Base
 
 #This is the main class. e.g. the GUI
@@ -43,25 +44,25 @@ class Main:
         return self.loaded_plugins[name]
 
 
-
 if __name__ == '__main__':
     '''
     Example Programm
     '''
     m=Main()
     m.load_plugins() #load all plugins (could also be called in constructor
-    print("Call PluginB")
-    m.start_single_plugin("PluginB")  #start a single plugin by name
+    #print("Call PluginB")
+    #m.start_single_plugin("PluginC")  #start a single plugin by name
     print("Call All")
     m.start_all_plugins()           #start all plugins
-    print("Main Counter value is: {}".format(m.main_value))
-    m.get_plugin("PluginA").set_main_value()    # call reimplemented function
-    print("New Main Counter value is: {}".format(m.main_value))
-    m.get_plugin("PluginB").set_main_value()    #call function of baseclass
-    print("New Main Counter value is: {}".format(m.main_value))
+    #print("Main Counter value is: {}".format(m.main_value))
+    #m.get_plugin("PluginA").set_main_value()    # call reimplemented function
+    #print("New Main Counter value is: {}".format(m.main_value))
+    #m.get_plugin("PluginB").set_main_value()    #call function of baseclass
+    #print("New Main Counter value is: {}".format(m.main_value))
     #Call functions of plugins
     m.get_plugin("PluginB").plugin_b_function()
-    try:
-        m.get_plugin("PluginA").plugin_b_function()
-    except Exception as e:
-        print("Error:",e)
+    #try:
+    #    m.get_plugin("PluginA").plugin_b_function()
+    #except Exception as e:
+    #    print("Error:",e)
+
